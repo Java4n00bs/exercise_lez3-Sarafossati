@@ -2,7 +2,21 @@ package exercise1;
 
 public class IMain {
     public static void main(String[] args) {
+      Impiegato impiegato1 = new Impiegato("Sara", "Fossati", 25);
+      Impiegato impiegato2 = new Impiegato("Mario", "Rossi", 12);
 
+      impiegato1.aumentaSalario(10);
+
+
+    if (impiegato1.salario > impiegato2.salario){
+      System.out.println("Il salario maggiore è quello di Sara");
+    } else {
+      System.out.println("Il salario maggiore è quello di Mario");
+    }
+
+    System.out.println("Mario guadagna " + impiegato2.salario + " euro al mese");
+    System.out.println("Sara guadagna " + impiegato1.salario + " euro al mese");
+    System.out.println(impiegato1.dettagli());
     }
 }
 
