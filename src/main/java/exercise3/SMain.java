@@ -6,9 +6,11 @@ public class SMain {
       Solido solido2 = new Solido(30, 35, 40);
       Solido solido3 = new Solido(45, 50, 55);
 
-      System.out.println(solido1.calcolovolume() == solido2.calcolovolume());
+      System.out.println((solido1.dettagli()).equals(solido2.dettagli()));
 
       /**
+      System.out.println(solido1.calcolovolume() == solido2.calcolovolume());
+      
       if((solido1.dettagli()).equals(solido2.dettagli())){
         System.out.println("I primi due solidi sono uguali");
       } else {
